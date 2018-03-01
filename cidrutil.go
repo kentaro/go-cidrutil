@@ -52,6 +52,7 @@ func (p *Parser) Parse(cidr string) (n *Network, err error) {
 	return
 }
 
+// Borrowed from http://play.golang.org/p/m8TNTtygK0
 func inclement(ip net.IP) {
 	for j := len(ip) - 1; j >= 0; j-- {
 		ip[j]++
